@@ -1,28 +1,23 @@
 package main.java.EventsClass;
 
-import main.java.ObjectRepositories.TalentPage;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import main.java.ObjectRepositories.TalentMetricsPage;
 import test.BaseTest;
 
 public class TalentMetricsEvents {
 
-    TalentPage tl = new TalentPage();
+    TalentMetricsPage tl = new TalentMetricsPage();
 
-    public void searchCompany(String companyName)
+
+
+    public boolean verifyTalentMetricsgPage()
     {
-        BaseTest.driver.findElement(tl.txtCompany).sendKeys(companyName);
+        return BaseTest.driver.findElement(tl.hdrTalentMetricsPage).isDisplayed();
     }
 
-    public void selectCompanyFromList()
-    {
-        new WebDriverWait(BaseTest.driver, 10).until(ExpectedConditions.elementToBeClickable(BaseTest.driver.findElement(tl.ulCompanyName)));
-        BaseTest.driver.findElement(tl.ulCompanyName).click();
-    }
-    public void clickSearch()
-    {
-        BaseTest.driver.findElement(tl.btnSeachCompanies).click();
-    }
+
+
+
+
 
 
 }

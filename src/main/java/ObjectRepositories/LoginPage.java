@@ -1,7 +1,7 @@
 package main.java.ObjectRepositories;
 
 import org.openqa.selenium.By;
-
+//This page contains locators from the login page
 public class LoginPage {
 
     public By txtUserName = By.xpath("//input[@name ='username']");
