@@ -1,0 +1,1 @@
+{"uuid":"1bd5ff5e-25bc-40dc-b39b-a45deaa66d0a","name":"test.TalentMetricsTest","children":["b7f0d2b2-a2b0-4728-8b28-a3ffef617ffd"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1654645083373,"stop":1654645093387}],"afters":[],"start":1654645083320,"stop":1654645110065}
