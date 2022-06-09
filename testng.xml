@@ -5,7 +5,7 @@
         <parameter name="browserName" value="Chrome"/>
 
         <classes>
-            <class name="test.TalentMetricsTest"/>
+            <class name="test.LandingPageTest"/>
         </classes>
     </test> <!-- Test -->
 

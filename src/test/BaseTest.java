@@ -2,7 +2,7 @@ package test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import main.java.EventsClass.LoginEvents;
-import main.java.EventsClass.TalentMetricsEvents;
+import main.java.EventsClass.LandingPageEvents;
 import main.java.utils.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +18,7 @@ public class BaseTest {
 
     public static WebDriver driver ;
     LoginEvents loginEvent;
-    TalentMetricsEvents talentMetricsEvents;
+    LandingPageEvents landingPageEvents;
 
 
 
@@ -33,7 +33,7 @@ public class BaseTest {
 
         loginEvent = new LoginEvents(driver);
 
-        talentMetricsEvents = new TalentMetricsEvents();
+        landingPageEvents = new LandingPageEvents();
         loginEvent.logins();
 
 
