@@ -20,12 +20,17 @@ LoginPage lg = new LoginPage();
         try {
 
             Resources.explicitWait(lg.txtUserName);
-            //new WebDriverWait(browserdriver, 10).until(ExpectedConditions.elementToBeClickable(lg.txtUserName));
             browserdriver.findElement(lg.txtUserName).click();
             browserdriver.findElement(lg.txtUserName).sendKeys("automation1@nomfa.mckinsey.id");
+            Resources.explicitWait(lg.btnContinue);
             browserdriver.findElement(lg.btnContinue).click();
+            Resources.explicitWait(lg.txtPassword);
+            Resources.explicitWait(lg.txtPassword);
             browserdriver.findElement(lg.txtPassword).sendKeys(("ZA7x46y7TNUXM5yY"));
+            Resources.explicitWait(lg.btnSubmit);
             browserdriver.findElement(lg.btnSubmit).click();
+            Resources.explicitWait(lg.btnAgreeAndContinue);
+            Resources.explicitWait(lg.btnAgreeAndContinue);
             browserdriver.findElement(lg.btnAgreeAndContinue).click();
 
         }

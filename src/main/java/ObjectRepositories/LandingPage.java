@@ -12,4 +12,16 @@ public class LandingPage {
     public  By ulCompanyName =  By.xpath("//ul[@id='company-search-field-popup']");
 
     public By txtPeer = By.xpath("//input[@id='multiple-company-search-field']");
+
+    public  By ulPeerName =  By.xpath("//ul[@id='multiple-company-search-field-popup']");
+
+    public By linkDemoVideo = By.xpath("//a[text()='ODE Demo Video']");
+
+    public By linkContactSupportTeam = By.xpath("//a[text()='Contact Support Team']");
+    public By linkListOfAvailableCountries = By.xpath("//a[text()='List of available companies']");
+
+
+
+
+
 }
